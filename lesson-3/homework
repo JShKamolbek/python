@@ -1,1 +1,10 @@
+## 1 Create and Access List Elements (Create a list containing five different fruits and print the third fruit.)
+ls = ["Olma", "Nok", "Banan", "Behi", "Uzum"]
+print(ls[3])
+
+## 2. Concatenate Two Lists (Create two lists of numbers and concatenate them into a single list.)
+ls1 = [1, 2, 3, 4]
+ls2 = [6, 5, 4, 3]
+ls1.extend(ls2)
+ls1
 
