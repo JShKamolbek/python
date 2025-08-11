@@ -1,16 +1,16 @@
-## 1 Create and Access List Elements (Create a list containing five different fruits and print the third fruit.)
+## 1 Roʻyxat elementlarini yaratish va ularga kirish (Besh xil mevadan iborat roʻyxatni yarating va uchinchi mevani chop eting.)
 ls = ["Olma", "Nok", "Banan", "Behi", "Uzum"]
 print(ls[3])
 
 
-## 2. Concatenate Two Lists (Create two lists of numbers and concatenate them into a single list.)
+## 2. Ikki roʻyxatni birlashtirish (Ikki raqamlar roʻyxatini yarating va ularni bitta roʻyxatga birlashtiring.)
 ls1 = [1, 2, 3, 4]
 ls2 = [6, 5, 4, 3]
 ls1.extend(ls2)
 ls1
 
 
-## 3. Extract Elements from a List (Given a list of numbers, extract the first, middle, and last elements and store them in a new list.)
+## 3. Roʻyxatdagi elementlarni ajratib oling (Raqamlar roʻyxatini hisobga olgan holda, birinchi, oʻrta va oxirgi elementlarni ajratib oling va ularni yangi roʻyxatda saqlang.)
 ls = ["Salom", 3, "men", 88, "dasturchiman"]
 ls2 = [ls[0], ls[len(ls)//2], ls[len(ls)-1]]
 ls2
