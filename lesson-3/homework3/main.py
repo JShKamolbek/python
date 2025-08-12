@@ -68,3 +68,35 @@ print("Ro'yxatdagi ko'k ranglar soni:", soni, "ta")
 royxat = ("Maymun", "Sher", "Jirafa", "Yo'lbars", "Sirtlon", "Qoplon")
 indeks = royxat.index("Sher")
 print(indeks)
+
+
+## 11. Ikki kortejni birlashtiring (Ikkita sonlar korteji yarating va ularni bitta kortejga birlashtiring.)
+kartej1 = (2, 3, 5, 4, 6, 10)
+kartej2 = (4, 5, 3, 11, 12)
+birlashtirilgan = kartej1 + kartej2
+print(birlashtirilgan)
+
+
+## 12. Ro‘yxat va to‘plam uzunligini toping (Roʻyxat va kortej berilgan boʻlsa, ularning uzunligini toping va chop eting.)
+ls = [2, 3, 5, 4, 6, 10, 4, 5, 3, 11, 12, "Yo'lbars", "Sirtlon", "Qoplon"]
+kartej = (2, 3, 5, 4, 6, 10, 4, "Maymun", "Sher", "Jirafa",)
+ls_uzunligi = len(ls)
+kartej_uzunligi = len(kartej)
+print("Ro'yxat uzunligi:", ls_uzunligi, "\nKartej uzunligi:", kartej_uzunligi)
+
+
+## 13. Tupleni ro'yxatga aylantirish (Beshta raqamdan iborat kortej yarating va uni ro'yxatga aylantiring.)
+kartej = (4, 5, 3, 11, 12)
+royxat  = list(kartej)
+print(royxat)
+
+
+## 14. Tupledagi maksimal va minimal qiymatlarni toping (Raqamlar majmuasi berilgan, maksimal va minimal qiymatlarni toping va chop eting.)
+kartej = (2, 3, 5, 8, 10, 12, 22, 32, 44)
+print("min:", min(kartej), "\nmax:", max(kartej))
+
+
+## 15. Tupleni teskari o'zgartirish (So'zlar to'plamini yarating va uni teskari tartibda chop eting.)
+kartej = ("Sanjar", "Akmal", "Nodir")
+teskari = tuple(reversed(kartej))
+print(teskari)
