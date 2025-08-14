@@ -1,6 +1,11 @@
 # Python lug'ati va mashqlar to'plami
 # Lug'at mashqlari
 
+# 1. Lug‘atni qiymat bo‘yicha tartiblang (Lug'atni qiymat bo'yicha saralash (o'sish va pasayish) uchun Python skriptini yozing.)
+oquvchi = {"Aziz": 15, "Akmal": 18, "Botir": 21, "Sardor": 16}
+tartiblangan = dict(sorted(oquvchi.items(), key = lambda x: x[1]))
+print(tartiblangan)
+
 # 2. Lug'atga kalit qo'shing (Lug'atga kalit qo'shish uchun Python skriptini yozing.)
 # Lug'at namunasi: {0: 10, 1: 20}
 # Kutilayotgan natija: {0: 10, 1: 20, 2: 30}
