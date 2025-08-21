@@ -1,3 +1,28 @@
+# 1. Stringni pastki chiziq bilan o'zgartirish
+# txt qatori berilgan bo'lsa, har uchinchi belgidan keyin pastki chiziq (_) qo'ying. Agar belgi unli bo'lsa 
+# yoki undan keyin pastki chiziq bo'lsa, pastki chiziqni keyingi belgiga o'tkazing. Oxirida pastki chiziq qo'yilmasligi kerak.
+# Misollar
+# Kirish: hello Chiqish: h_lo
+# Kirish: assalom Chiqish: ass_alom
+# Kirish: abcabcabcdeabcdefabcdefg Chiqish: abc_abc_abcd_abcd_abcdef
+unlilar = ['a','i','u','o','e','A','I','U','O','E']
+ls = list(input("Biror so'z kiriting:"))
+index = 0
+yangi_ls = []
+for i in ls:
+    index += 1
+    if i not in unlilar and i != '_':
+        if index % 3 != 0:
+            yangi_ls.append(i)
+        else:
+            yangi_ls.append(i)
+            if index != len(ls):
+                yangi_ls.append('_')
+    else:
+        yangi_ls.append(i)
+print(''.join(yangi_ls),end='')
+
+
 # 2. Butun kvadratlar mashqi
 # Vazifa
 # Taqdim etilgan kod stubkasi STDIN dan butun sonni, n ni o'qiydi. 0 <= i < n bo'lgan barcha manfiy bo'lmagan butun sonlar uchun i^2 ni chop eting.
